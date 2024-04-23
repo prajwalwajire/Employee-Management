@@ -16,7 +16,7 @@ const AddCategory = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4001/category/add_category",
+        "https://employee-management-mefe.onrender.com/category/add_category",
         {
           name: categoryName,
           description: categoryDescription,

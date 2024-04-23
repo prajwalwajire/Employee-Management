@@ -47,7 +47,7 @@ function Signup() {
     setError("");
     console.log(name);
     axios
-      .post("http://localhost:4001/auth/register", {
+      .post("https://employee-management-mefe.onrender.com/auth/register", {
         name,
         email,
         password,

@@ -14,7 +14,7 @@ const SideNavbar = () => {
   const [salaryTotal, setSalaryTotal] = useState(0);
   const employeeCount = (id) => {
     axios
-      .get(`http://localhost:4001/employee/employee_count/${id}`)
+      .get(`https://employee-management-mefe.onrender.com/employee/employee_count/${id}`)
       .then((response) => {
         if (response.data.Status) {
           setEmployeeTotal(response.data.Result);
@@ -29,7 +29,7 @@ const SideNavbar = () => {
 
   const fetchSalaryTotal = (id) => {
     axios
-      .get(`http://localhost:4001/employee/total_salary/${id}`)
+      .get(`https://employee-management-mefe.onrender.com/employee/total_salary/${id}`)
       .then((response) => {
         if (response.data.Status) {
           setSalaryTotal(Number(response.data.Result));
@@ -69,7 +69,7 @@ const SideNavbar = () => {
   const fetchEmployee = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4001/employee/employee/${id}`
+        `https://employee-management-mefe.onrender.com/employee/employee/${id}`
       );
       if (response.data.employees && response.data.employees.length > 0) {
         setAllEmployees(response.data.employees);

@@ -98,10 +98,10 @@ const FirstPage = () => {
             <div className="newBox">
               <div className="tex">
                 Salary & Employee Management with
-                <span className="textbox"> Hub4</span>
+                <span className="textbox"> Next24tech Technology</span>
               </div>
               <div className="otherStyle">
-                Unlock a new era of streamlined employee management with Hub4's
+                Unlock a new era of streamlined employee management with Next24tech Technology's
                 dedicated dashboard. Designed to simplify your management
                 processes, this centralized hub ensures that tracking employee
                 numbers and managing salaries becomes a breeze.
